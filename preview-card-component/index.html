@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+		html,body,*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Inter', sans-serif;
+		}
+
+		html{
+			background: hsl(233, 47%, 7%);
+			color: #fff;
+			height: 100%;
+			display: flex;
+			font-size: 15px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.container{
+			background: hsl(244, 38%, 16%);
+			display: flex;
+			border-radius: 16px;
+			flex-direction: column;
+			width:375px;
+			text-align:center;
+		}
+
+		.background-image {
+			position: relative;
+			background: url('images/image-header-mobile.jpg') no-repeat;
+			background-size:contain;
+
+			width:100%;
+			height:275px;
+			border-radius:16px 16px 0px 0px;
+		}
+	
+		.overlay{
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background: rgba(117, 63, 149, 0.55);
+			border-radius:16px 16px 0px 0px;
+		}
+
+		.content{
+			padding:45px 40px 20px;
+		}
+
+		h1{
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		h1 span{
+			color: hsl(277, 64%, 61%);
+		}
+
+		.text-gray{
+			color: hsla(0, 0%, 100%, 0.75);
+			font-size: 15px;
+			line-height: 1.8rem;;
+		}
+
+		ul{
+			display: flex;
+			list-style-type: none;
+			justify-content: space-between;
+			margin-top: 40px;
+			flex-direction: column;
+			font-weight: 700;
+			font-size: 24px;
+
+		}
+
+		ul li{
+			margin-bottom:35px;
+		}
+
+		ul li span{
+			display: block;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 15px;
+			color: hsla(0, 0%, 100%, 0.6);
+		}
+
+		@media only screen and (min-width : 992px) {
+			.container{
+				width:1440px;
+				flex-direction: row;
+				text-align: left;
+			}
+
+			.background-image{
+				order:2;
+				height: 500px;
+				background: url('images/image-header-desktop.jpg') no-repeat;
+				border-radius: 0px 16px 16px 0px;
+				background-size: 100%;
+			}
+
+			.overlay{
+				border-radius: 0px 16px 16px 0px;
+			}
+
+			.content{
+				padding: 80px 120px 20px 70px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			h1{font-size: 42px;}
+
+			.text-gray{width: 75%;}
+
+			ul{
+				flex-direction: row;
+				margin-top: auto;
+				width: 80%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="background-image">
+			<div class="overlay"></div>
+		</div>
+		<div class="content">		
+			<h1>Get <span>insights</span> that help your business grow.</h1>
+			<p class="text-gray">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+			<ul>
+				<li>10k+ <span>Companies</span></li>
+				<li>314  <span>Templates</span></li>
+				<li>12M+ <span>Queries</span></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
